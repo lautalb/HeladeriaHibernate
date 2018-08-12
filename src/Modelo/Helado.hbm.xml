@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-ago-2018 12:10:56 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelo.Helado" table="helado" catalog="heladeria" optimistic-lock="version">
+        <id name="idHelado" type="java.lang.Integer">
+            <column name="idHelado" />
+            <generator class="identity" />
+        </id>
+        <property name="sabor" type="string">
+            <column name="sabor" length="45" />
+        </property>
+        <property name="ruta" type="string">
+            <column name="ruta" length="200" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+    </class>
+</hibernate-mapping>

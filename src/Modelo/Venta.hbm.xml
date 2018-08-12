@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-ago-2018 12:10:56 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Modelo.Venta" table="venta" catalog="heladeria" optimistic-lock="version">
+        <id name="idVenta" type="java.lang.Integer">
+            <column name="idVenta" />
+            <generator class="identity" />
+        </id>
+        <property name="helado" type="string">
+            <column name="helado" length="45" />
+        </property>
+        <property name="cantidad" type="java.lang.Integer">
+            <column name="cantidad" />
+        </property>
+        <property name="importe" type="java.lang.Double">
+            <column name="importe" precision="22" scale="0" />
+        </property>
+        <property name="fecha" type="string">
+            <column name="fecha" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

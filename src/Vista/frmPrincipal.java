@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import javax.swing.JInternalFrame;
+
 /**
  *
  * @author lautalb
@@ -17,7 +19,23 @@ public class frmPrincipal extends javax.swing.JFrame {
     public frmPrincipal() {
         initComponents();
     }
-
+    
+    public void controlarInstancia(JInternalFrame inter){
+        boolean mostrar=true;
+        
+        for (int i = 0; i < pnlPrincipal.getComponentCount(); i++) {
+            if(inter.getClass().isInstance(pnlPrincipal.getComponent(i))){
+                mostrar=false;
+            }
+        }
+        
+        if(mostrar){
+            inter.setClosable(true);
+            inter.setMaximizable(true);
+            pnlPrincipal.add(inter);
+            inter.setVisible(true);
+        }
+    }    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,21 +45,63 @@ public class frmPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        pnlPrincipal = new javax.swing.JDesktopPane();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        mHelados = new javax.swing.JMenu();
+        miNuevoHelado = new javax.swing.JMenuItem();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout pnlPrincipalLayout = new javax.swing.GroupLayout(pnlPrincipal);
+        pnlPrincipal.setLayout(pnlPrincipalLayout);
+        pnlPrincipalLayout.setHorizontalGroup(
+            pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 395, Short.MAX_VALUE)
+        );
+        pnlPrincipalLayout.setVerticalGroup(
+            pnlPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 290, Short.MAX_VALUE)
+        );
+
+        mHelados.setText("Helados");
+
+        miNuevoHelado.setText("Nuevo helado");
+        miNuevoHelado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miNuevoHeladoActionPerformed(evt);
+            }
+        });
+        mHelados.add(miNuevoHelado);
+
+        jMenuBar1.add(mHelados);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(90, Short.MAX_VALUE)
+                .addComponent(pnlPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(pnlPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void miNuevoHeladoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miNuevoHeladoActionPerformed
+        frmNuevoHelado frm = new frmNuevoHelado();
+        this.controlarInstancia(frm);
+        
+    }//GEN-LAST:event_miNuevoHeladoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,7 +137,13 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
     }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu mHelados;
+    private javax.swing.JMenuItem miNuevoHelado;
+    private javax.swing.JDesktopPane pnlPrincipal;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,6 +5,8 @@
  */
 package heladeriahibernate;
 
+import Vista.frmPrincipal;
+
 /**
  *
  * @author lautalb
@@ -15,7 +17,8 @@ public class HeladeriaHibernate {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        frmPrincipal frm = new frmPrincipal();
+        frm.setVisible(true);
     }
     
 }

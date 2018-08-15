@@ -46,7 +46,7 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         pnlPrincipal = new javax.swing.JDesktopPane();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        mbPrincipal = new javax.swing.JMenuBar();
         mHelados = new javax.swing.JMenu();
         miNuevoHelado = new javax.swing.JMenuItem();
 
@@ -73,9 +73,9 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
         mHelados.add(miNuevoHelado);
 
-        jMenuBar1.add(mHelados);
+        mbPrincipal.add(mHelados);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(mbPrincipal);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -141,8 +141,8 @@ public class frmPrincipal extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu mHelados;
+    private javax.swing.JMenuBar mbPrincipal;
     private javax.swing.JMenuItem miNuevoHelado;
     private javax.swing.JDesktopPane pnlPrincipal;
     // End of variables declaration//GEN-END:variables

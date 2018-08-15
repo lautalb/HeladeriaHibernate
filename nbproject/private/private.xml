@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Lautaro/Documents/NetBeansProjects/HeladeriaHibernate/src/hibernate.cfg.xml</file>
-            <file>file:/C:/Users/Lautaro/Documents/NetBeansProjects/HeladeriaHibernate/src/Vista/frmPrincipal.java</file>
-            <file>file:/C:/Users/Lautaro/Documents/NetBeansProjects/HeladeriaHibernate/src/Modelo/Helado.java</file>
-            <file>file:/C:/Users/Lautaro/Documents/NetBeansProjects/HeladeriaHibernate/src/hibernate.reveng.xml</file>
-            <file>file:/C:/Users/Lautaro/Documents/NetBeansProjects/HeladeriaHibernate/src/heladeriahibernate/HeladeriaHibernate.java</file>
-            <file>file:/C:/Users/Lautaro/Documents/NetBeansProjects/HeladeriaHibernate/src/Controlador/Operaciones.java</file>
+            <file>file:/C:/Users/Lautaro/Documents/Programacion%20java/HeladeriaHibernate/src/heladeriahibernate/HeladeriaHibernate.java</file>
+            <file>file:/C:/Users/Lautaro/Documents/Programacion%20java/HeladeriaHibernate/src/Vista/frmNuevoHelado.java</file>
+            <file>file:/C:/Users/Lautaro/Documents/Programacion%20java/HeladeriaHibernate/src/Modelo/Helado.java</file>
+            <file>file:/C:/Users/Lautaro/Documents/Programacion%20java/HeladeriaHibernate/src/Vista/frmPrincipal.java</file>
         </group>
     </open-files>
 </project-private>
